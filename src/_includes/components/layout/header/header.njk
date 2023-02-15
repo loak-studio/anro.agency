@@ -1,3 +1,31 @@
-<header>
-  header
+<header class="header">
+  <div class="header__container">
+    <a class="header__logo logo" href="/" class="logo">anró agency</a>
+    <nav class="header__navigation">
+      <ul class="header__navigation-list">
+        {% for item in navigation %}
+          <li class="header__navigation-item">
+            {% if item.items %}
+              <button class="h6 header__navigation-label">
+                {{ item.label }}
+              </button>
+              <ul class="header__sub-navigation">
+                {% for subitem in item.items %}
+                  <li>
+                    <span class="h6">{{ subitem.label }}</span>
+                    <p class="text">{{ subitem.description }}</p>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <a class="h6 header__navigation-label" href="{{ item.href }}">{{ item.label }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="header__social">
+      réso
+    </div>
+  </div>
 </header>

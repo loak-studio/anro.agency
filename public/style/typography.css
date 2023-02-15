@@ -1,0 +1,90 @@
+.h1 {
+  font-family: 'Black Mango';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 122px;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: 'Black Mango';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.375rem;
+  line-height: 82px;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 60px;
+}
+
+.h4 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+.h5 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+.h6 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.link {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.number {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 96px;
+}
+
+.number-asset {
+  font-family: 'Asset';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 60px;
+}
+
+.logo {
+  font-family: 'Asset';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 25px;
+}

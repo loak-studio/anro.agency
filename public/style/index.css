@@ -1,5 +1,14 @@
 @import "./reset.css";
-@import "./typographie.css";
+@import "./typography.css";
 @import "./fonts.css";
 @import "./layout.css";
-@import "./pages/index.css"
+@import "./colors.css";
+
+/* Pages */
+
+@import "./pages/index.css";
+
+/* Components */
+
+@import "../../src/_includes/components/layout/header/header.css";
+@import "../../src/_includes/components/layout/footer/footer.css";
