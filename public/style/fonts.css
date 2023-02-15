@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Asset";
+  src: url("/fonts/Asset-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Black Mango";
+  src: url("/fonts/BlackMangoVariableGX.ttf");
+  font-display: swap;
+  font-weight: 100 1000;
+}

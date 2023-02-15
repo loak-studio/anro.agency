@@ -1,0 +1,16 @@
+.asset{
+  font-family: "Asset";
+}
+.poppins{
+  font-family: "Poppins";
+}
+
+.regular{
+  font-weight: 400;
+}
+.semi-bold{
+  font-weight: 600;
+}
+.bold{
+  font-weight: 700;
+}
