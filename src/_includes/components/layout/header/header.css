@@ -131,8 +131,9 @@ button.header__navigation-label::after {
     padding-top: 1rem;
     justify-content: flex-start;
     padding-left: 1rem;
-    transform: translateX(-100vw);
+    transform: translateX(-200vw);
     transition: transform 300ms;
+    z-index: 10;
   }
   .header__navigation-list{
     flex-direction: column;
@@ -166,6 +167,7 @@ button.header__navigation-label::after {
     bottom: 1rem;
     opacity: 0;
     pointer-events: none;
+    z-index: 11;
   }
   .header--active .header__social{
     opacity: 1;

@@ -1,0 +1,11 @@
+.hero-number__value::after{
+  height: 2px;
+  content:'';
+  background: var(--primary);
+  display: block;
+  width: 300px;
+}
+.hero-number{
+  display: flex;
+  flex-direction: column;
+}

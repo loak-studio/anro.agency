@@ -1,0 +1,11 @@
+---
+layout: layout.njk
+pagination:
+    data: services
+    size: 1
+    alias: service
+    addAllPagesToCollections: true
+permalink: "services/{{ service.slug }}/"
+eleventyComputed:
+    title: "{{service.name}}"
+---

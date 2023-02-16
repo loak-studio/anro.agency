@@ -12,3 +12,7 @@
 
 @import "../../src/_includes/components/layout/header/header.css";
 @import "../../src/_includes/components/layout/footer/footer.css";
+@import "../../src/_includes/components/index/hero/hero.css";
+@import "../../src/_includes/components/index/hero-button/hero-button.css";
+@import "../../src/_includes/components/index/hero-number/hero-number.css";
+@import "../../src/_includes/components/index/services-list/services-list.css";

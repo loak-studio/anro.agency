@@ -1,0 +1,16 @@
+<section class="services-list">
+  <h2 class="h2 services-list__title">Mes services</h2>
+  {% for service in services %}
+    <div class="service">
+      <h3 class="service__title h3"> <span class="service__index">0{{loop.index}}</span> {{service.name}}</h3>
+      <div class="service__images">
+        {{ site | log}}
+        {% for image in service.images %} 
+        <figure>
+          <img src="{{site.api}}/assets/{{image.directus_files_id}}" alt="">
+        </figure>
+        {%endfor%}
+      </div>
+    </div>
+  {% endfor %}
+</section>

@@ -1,0 +1,5 @@
+{% macro heroButton(label, hoverLabel, href) %}
+<a style="--hover-text:{{hoverLabel}}" class="hero-button" href="{{href}}">
+  {{label}}
+</a>
+{% endmacro %}

@@ -3,6 +3,19 @@
     <a class="header__logo logo" href="/" class="logo">anró agency</a>
     <nav class="header__navigation">
       <ul class="header__navigation-list">
+          <li class="header__navigation-item">        
+              <button class="h6 header__navigation-label">
+                Services
+              </button>
+              <ul class="header__sub-navigation">
+                {% for subitem in services %}
+                  <li class="header__sub-navigation-item">
+                    <a href="/services/{{ subitem.slug }}/" class="header__sub-navigation-link h6">{{ subitem.name }}</a>
+                    <p class="text">{{ subitem.description }}</p>
+                  </li>
+                {% endfor %}
+              </ul>
+          </li>
         {% for item in navigation %}
           <li class="header__navigation-item">
             {% if item.items %}
@@ -12,7 +25,7 @@
               <ul class="header__sub-navigation">
                 {% for subitem in item.items %}
                   <li class="header__sub-navigation-item">
-                    <a href="{{subitem.href}}" class="header__sub-navigation-link h6">{{ subitem.label }}</a>
+                    <a href="{{ subitem.href }}" class="header__sub-navigation-link h6">{{ subitem.label }}</a>
                     <p class="text">{{ subitem.description }}</p>
                   </li>
                 {% endfor %}
@@ -24,15 +37,15 @@
         {% endfor %}
       </ul>
     </nav>
-      <ul class="header__social">
-        {%for link in social%}
-          <li>
-          <a href="{{link.href}}">
+    <ul class="header__social">
+      {% for link in social %}
+        <li>
+          <a href="{{ link.href }}">
             {% include "components/icons/" + link.icon + ".njk" %}
           </a>
-          </li>
-        {%endfor%}
-      </ul>
-      <button id="hamburger">Button</button>
+        </li>
+      {% endfor %}
+    </ul>
+    <button id="hamburger">Button</button>
   </div>
 </header>

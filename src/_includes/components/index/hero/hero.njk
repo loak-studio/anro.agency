@@ -1,0 +1,22 @@
+{% from "components/index/hero-button/hero-button.njk" import heroButton %}
+{% from "components/index/hero-number/hero-number.njk" import number %}
+
+<section class="hero">
+  <h1 class="hero__title">anró</h1>
+  <div class="hero__content">
+    <p class="hero__text text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pellentesque turpis vitae mattis. Cras rutrum turpis non urna mattis maximus. Quisque condimentum sit amet purus vitae vehicula
+    </p>
+    {{ heroButton(label="Découvrez l’agence", href="#", hoverLabel="Rendez votre communication unique") }}
+  </div>
+  <div class="hero__pill">
+    <figure class="hero__pill-figure">
+    <img src="/antoine_boucaut.jpg" alt="">
+  </figure>
+  </div>
+  <div class="hero__numbers">
+    {{number(label="Posts réalisés", number="800")}}
+    {{number(label="Clients satisfaits", number="12")}}
+    {{number(label="Followers animés tous les mois", number="10k")}}
+  </div>
+</section>
