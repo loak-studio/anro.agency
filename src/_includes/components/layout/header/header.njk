@@ -11,8 +11,8 @@
               </button>
               <ul class="header__sub-navigation">
                 {% for subitem in item.items %}
-                  <li>
-                    <a href="{{subitem.href}}" class="h6">{{ subitem.label }}</a>
+                  <li class="header__sub-navigation-item">
+                    <a href="{{subitem.href}}" class="header__sub-navigation-link h6">{{ subitem.label }}</a>
                     <p class="text">{{ subitem.description }}</p>
                   </li>
                 {% endfor %}
