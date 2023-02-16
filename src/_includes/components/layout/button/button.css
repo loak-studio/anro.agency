@@ -1,0 +1,27 @@
+.button{
+  background: var(--primary);
+  padding: 12px 32px;
+  border-radius: 58px;
+  display: inline-flex;
+  align-items: center;
+  gap:20px;
+  transition: background 300ms;
+  justify-content: center;
+}
+.button:hover{
+  background: var(--primary-darker);
+}
+.button--arrow{
+  background: var(--grey);
+  color: var(--primary);
+}
+.button--arrow::before{
+  width: 22px;
+  height: 22px;
+  content:'';
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='11.1349' y='0.53479' width='14.8' height='1.2' transform='rotate(45 11.1349 0.53479)' fill='%23E9E4D9'/%3E%3Crect x='21.6' y='11.0001' width='14.8' height='1.2' transform='rotate(135 21.6 11.0001)' fill='%23E9E4D9'/%3E%3Crect x='20.4' y='10.8' width='1.2' height='20.4' transform='rotate(90 20.4 10.8)' fill='%23E9E4D9'/%3E%3C/svg%3E%0A");
+}
+.button--arrow:hover{
+  background: var(--black);
+}

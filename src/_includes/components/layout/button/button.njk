@@ -1,0 +1,3 @@
+{% macro button(label, href, arrow = false) %}
+<a class="button h6 {%if arrow%} button--arrow {%endif%}" href="{{href}}">{{label}}</a>
+{% endmacro %}

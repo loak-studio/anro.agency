@@ -88,3 +88,8 @@
   font-size: 1.25rem;
   line-height: 25px;
 }
+@media (max-width:900px) {
+  .h3{
+    font-size: 2rem;
+  }
+}

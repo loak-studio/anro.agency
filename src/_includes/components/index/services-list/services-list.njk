@@ -1,15 +1,26 @@
+{% from "components/layout/button/button.njk" import button %}
+
 <section class="services-list">
-  <h2 class="h2 services-list__title">Mes services</h2>
+  <h2 id="mes-services" class="h2 services-list__title">Mes services</h2>
   {% for service in services %}
     <div class="service">
       <h3 class="service__title h3"> <span class="service__index">0{{loop.index}}</span> {{service.name}}</h3>
-      <div class="service__images">
-        {{ site | log}}
+      <div class="service__images-container">
+        <div class="service__images {{service.display}}">
         {% for image in service.images %} 
-        <figure>
+        <figure class="service__figure">
           <img src="{{site.api}}/assets/{{image.directus_files_id}}" alt="">
         </figure>
         {%endfor%}
+      </div>
+      </div>
+      <p class="service__text text">
+        {{service.longDescription}}
+      </p>
+      <div class="service__links">
+        {{button(label="Mes réalisations", href="/portfolio/#" + service.slug)}}
+      {{button(label="En savoir plus", href="/services/" + service.slug + "/", arrow = true)}}
+
       </div>
     </div>
   {% endfor %}

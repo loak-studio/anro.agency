@@ -1,42 +1,152 @@
-.services-list::before{
+.services-list::before {
   height: 2px;
   width: 100vw;
   background: var(--primary);
   display: block;
-  content:'';
+  content: '';
   margin-bottom: 82px;
 }
 
-.services-list__title{
+.services-list__title {
   max-width: 1068px;
   margin: 0 auto;
   color: var(--primary);
   margin-bottom: 100px;
 }
 
-.service{
+.service {
   max-width: 1068px;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
-.service__title{
+
+.service__title {
   display: flex;
   color: var(--primary);
   align-items: center;
   justify-content: flex-end;
-  gap:20px;
+  gap: 20px;
 }
-.service__index{
+
+.service__index {
   display: flex;
-  gap:20px;
+  gap: 20px;
   align-items: center;
 }
-.service__index::after{
+
+.service__index::after {
   display: block;
   width: 300px;
   height: 2px;
-  content:'';
+  content: '';
   background: var(--primary);
 }
-.service__images{
+
+.service__images-container {
+  height: 413px;
+  margin: 60px 0;
+  position: relative;
+}
+
+.service__images {
   display: flex;
+  height: 100%;
+  gap: 60px;
+  position: absolute;
+}
+
+.service__images--center {
+  left: -627px;
+}
+
+.service__images--right {
+  left: -380px;
+}
+
+.service__images--left {
+  left: -380px;
+}
+
+.service__figure {
+  height: 100%;
+  border-radius: 400px;
+  overflow: hidden;
+}
+
+.service__figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.service__images--center>* {
+  width: 712px;
+}
+
+.service__images--left>*:nth-child(1) {
+  width: 1033px;
+}
+
+.service__images--left>*:nth-child(2) {
+  width: 735px;
+}
+
+.service__images--right>*:nth-child(2) {
+  width: 1033px;
+}
+
+.service__images--right>*:nth-child(1) {
+  width: 735px;
+}
+
+.service__text {
+  color: var(--primary);
+  max-width: 700px;
+}
+
+.service__links {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1100px) {
+  .services-list__title {
+    padding: 1rem;
+  }
+
+  .service {
+    padding: 0 1rem 3rem 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .service__title {
+    gap: 20px;
+    width: 100%;
+  }
+  .services-list::before{
+    margin-bottom: 40px;
+  }
+  .services-list__title{
+    margin-bottom: 60px;
+  }
+  
+  .service__index {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 1 1 0;
+    font-size: 1.25rem;
+  }
+  
+  .service__index::after {
+    width: 100%;
+    flex: 1 1 0;
+  }
+}
+@media (max-width:800px) {
+  
+  .service__links {
+    flex-direction: column;
+  }
 }
