@@ -1,0 +1,17 @@
+[
+  {
+    "name":"Facebook",
+    "href":"#",
+    "icon":"facebook"
+  },  
+  {
+    "name":"Instagram",
+    "href":"https://www.instagram.com/anro.agency/",
+    "icon":"instagram"
+  },
+  {
+    "name":"LinkedIn",
+    "href":"https://www.linkedin.com/company/anro-agency/",
+    "icon":"linkedin"
+  }
+]

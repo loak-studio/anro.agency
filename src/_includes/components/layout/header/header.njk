@@ -12,7 +12,7 @@
               <ul class="header__sub-navigation">
                 {% for subitem in item.items %}
                   <li>
-                    <span class="h6">{{ subitem.label }}</span>
+                    <a href="{{subitem.href}}" class="h6">{{ subitem.label }}</a>
                     <p class="text">{{ subitem.description }}</p>
                   </li>
                 {% endfor %}
@@ -24,8 +24,15 @@
         {% endfor %}
       </ul>
     </nav>
-    <div class="header__social">
-      réso
-    </div>
+      <ul class="header__social">
+        {%for link in social%}
+          <li>
+          <a href="{{link.href}}">
+            {% include "components/icons/" + link.icon + ".njk" %}
+          </a>
+          </li>
+        {%endfor%}
+      </ul>
+      <button id="hamburger">Button</button>
   </div>
 </header>
