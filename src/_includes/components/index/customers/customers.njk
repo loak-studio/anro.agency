@@ -1,0 +1,23 @@
+{% from "components/layout/button/button.njk" import button %}
+
+<section class="customers">
+  <h2 class="h2 customers__title">Mes clients</h2>
+  <ul class="customers__list">
+    {{customers | log}}
+    {% for customer in customers %}
+    <li>
+      {{ customer | log }}
+      <figure class="customer__logo">
+        <img src="{{site.api}}/assets/{{customer.logo}}" alt="{{customer.name}}">
+      </figure>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="customers__content">
+    <p class="text">
+Je peux vous aider à atteindre vos objectifs et à dynamiser votre présence sur les réseaux sociaux. Nous pouvons vous fournir des conseils et des stratégies pour vous aider à atteindre vos objectifs.
+    </p>
+        {{button(label="En découvrir plus", href="/portfolio/")}}
+
+  </div>
+</section>
