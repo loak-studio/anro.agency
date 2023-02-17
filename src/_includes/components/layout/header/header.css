@@ -98,6 +98,7 @@ button.header__navigation-label::after {
 
 #hamburger{
   display: none;
+  padding: 0;
 }
 
 .close-layout{
@@ -110,16 +111,44 @@ button.header__navigation-label::after {
 }
 
 @media (max-width: 1100px) {
+  .header__container{
+    justify-content: space-between;
+  }
+  .header__logo {
+    flex: unset;
+  }
   .close-layout{
     display: none;
   }
   .header--active .header__navigation{
     transform: translateX(0);
   }
+  .header--active #hamburger::after{
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+  .header--active #hamburger::before{
+    position: absolute;
+    transform: rotate(45deg);
+  }
   #hamburger{
     position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    width: 27px;
+    height: 27px;
+  }
+  #hamburger::before, #hamburger::after{
+    height: 3px;
+    width: 27px;
+    content:'';
+    background: var(--primary);
     display: block;
+    transition: transform 300ms;
   }
   .header__navigation{
     position: fixed;
