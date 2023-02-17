@@ -9,3 +9,13 @@ permalink: "services/{{ service.slug }}/"
 eleventyComputed:
     title: "{{service.name}}"
 ---
+
+
+{% from "components/services/sub-service/sub-service.njk" import subService %}
+
+<h1 class="h1 page-service__title">{{service.name}}</h1>
+
+
+{% for subservice in service.subServices%}
+  {{subService(subservice=subservice.item, index=loop.index, site=site)}}
+{% endfor %}

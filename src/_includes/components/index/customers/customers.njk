@@ -2,10 +2,8 @@
 <section class="customers">
   <h2 class="h2 customers__title">Mes clients</h2>
   <ul class="customers__list">
-    {{ customers | log }}
     {% for customer in customers %}
       <li>
-        {{ customer | log }}
         <figure class="customer__logo">
           <img src="{{ site.api }}/assets/{{ customer.logo }}" alt="{{ customer.name }}"></figure>
         </li>

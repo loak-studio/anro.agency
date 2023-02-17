@@ -1,0 +1,14 @@
+{% macro subService(subservice, index, site) %}
+  <div class="sub-service {% if index % 2 == 0 %} sub-service--reverse{%endif%}">
+    <div class="sub-service__title">
+      <h2 class="h2">{{subservice.name}}</h2>
+      <span class="sub-service__index">0{{index}}</span>
+    </div>
+    <div class="sub-service__wysiwyg">
+      {{subservice.description | safe}}
+    </div>
+    <figure class="sub-service__figure">
+      <img src="{{ site.api}}/assets/{{subservice.image}}" alt="">
+    </figure>
+  </div>
+{% endmacro %}

@@ -6,7 +6,7 @@
 
 /* Pages */
 
-/* @import "./pages/index.css"; */
+@import "./pages/services.css";
 
 /* Components */
 
@@ -24,3 +24,7 @@
 @import "../../src/_includes/components/index/hero-number/hero-number.css";
 @import "../../src/_includes/components/index/services-list/services-list.css";
 @import "../../src/_includes/components/index/customers/customers.css";
+
+  /* -- SERVICES */
+
+@import "../../src/_includes/components/services/sub-service/sub-service.css";

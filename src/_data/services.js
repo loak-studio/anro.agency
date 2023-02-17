@@ -1,6 +1,6 @@
 require('dotenv').config()
 module.exports = async ()=>{
-  const req = await fetch(process.env.API + '/items/services/?fields=*.*', {
+  const req = await fetch(process.env.API + '/items/services/?fields=*.*.*', {
     method:'GET',
     headers:{
         Authorization: `Bearer ${process.env.TOKEN}`
