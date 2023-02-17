@@ -1,4 +1,32 @@
 ---
 layout: layout.njk
 title: Contact
+needHelp: false
 ---
+
+<section class="page-contact">
+  <h1 class="h1">Contact</h1>
+  <ul class="page-contact__links">
+    <li class="page-contact__link">
+      <span class="text page-contact__link-title">Téléphone</span>
+      <a class="h5" href="">0471 90 90 90</a>
+    </li>
+    <li class="page-contact__link">
+      <span class="text page-contact__link-title">Mail</span>
+      <a class="h5 page-contact__link-link" href="">antoine@anro.agency</a>
+    </li>
+    <li class="page-contact__link">
+      <span class="text page-contact__link-title">Réseaux sociaux</span>
+      <div class="page-contact__link-social">
+        {% for link in social %}
+          <a title="{{link.name}}" target="_blank" href="{{link.href}}">
+            {% include "components/icons/" + link.icon + ".njk" %}
+          </a>
+        {% endfor %}
+      </div>
+    </li>
+  </ul>
+  <figure class="page-contact__figure">
+    <img src="/antoine_boucaut.jpg" alt="">
+  </figure>
+</section>

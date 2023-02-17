@@ -1,3 +1,6 @@
+---
+needHelp: true
+---
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,7 +15,7 @@
   <main>
     {{content | safe}}
   </main>
-  {% include "components/layout/need-help/need-help.njk" %}
+  {% if needHelp %}{% include "components/layout/need-help/need-help.njk" %}{%endif%}
   {% include "components/layout/footer/footer.njk" %}
   <script type="module" src="/scripts/index.js"></script>
 </body>

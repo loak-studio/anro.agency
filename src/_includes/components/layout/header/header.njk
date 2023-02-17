@@ -40,7 +40,7 @@
     <ul class="header__social">
       {% for link in social %}
         <li>
-          <a target="_blank" href="{{ link.href }}">
+          <a title="{{link.name}}" target="_blank" href="{{ link.href }}">
             {% include "components/icons/" + link.icon + ".njk" %}
           </a>
         </li>
