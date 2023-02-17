@@ -1,0 +1,15 @@
+{% from "components/layout/button/button.njk" import button %}
+<section class="need-help">
+  <div class="need-help__container">
+    <div class="need-help__content">
+      <h2 class="h2 need-help__title">Une question ou besoin d'aide?</h2>
+      <div class="need-help__button-container">
+        {{ button(label="Commencer maintenant", href="/contact/") }}
+      </div>
+    </div>
+    <div class="need-help__figure-container">
+      <figure class="need-help__figure">
+        <img src="/antoine_boucaut.jpg" alt=""></figure>
+      </div>
+    </div>
+  </section>
