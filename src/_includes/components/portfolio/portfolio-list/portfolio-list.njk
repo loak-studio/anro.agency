@@ -21,7 +21,6 @@
         <div class="swiper-wrapper">
           {% for project in service.projects %}
             <div class="swiper-slide">
-              {{ project.projects_id | log }}
               <figure class="swiper-slide__figure">
                 <img src="{{site.api}}/assets/{{project.projects_id.thumbnail.id}}" alt="">
               </figure>
