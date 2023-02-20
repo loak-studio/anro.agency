@@ -2,3 +2,9 @@
 layout: layout.njk
 title: Portfolio
 ---
+{% from "components/portfolio/portfolio-list/portfolio-list.njk" import portfolioList %}
+<h1 class="h1 page-portfolio__title">Mon portfolio</h1>
+
+{% for service in services %}
+{{ portfolioList(service=service, index=loop.index, site=site) }}
+{% endfor %}

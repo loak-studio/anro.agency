@@ -23,6 +23,7 @@
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-bundle": "^1.0.1",
     "@11ty/eleventy-plugin-vite": "^4.0.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "swiper": "^9.0.5"
   }
 }

@@ -8,6 +8,7 @@
 
 @import "./pages/services.css";
 @import "./pages/contact.css";
+@import "./pages/portfolio.css";
 
 /* Components */
 
@@ -29,3 +30,7 @@
   /* -- SERVICES */
 
 @import "../../src/_includes/components/services/sub-service/sub-service.css";
+
+  /* -- PORTFOLIO */
+
+@import "../../src/_includes/components/portfolio/portfolio-list/portfolio-list.css";

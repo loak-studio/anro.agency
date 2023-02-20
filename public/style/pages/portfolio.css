@@ -1,0 +1,11 @@
+.page-portfolio__title{
+  max-width: 1068px;
+  margin: 60px auto 160px auto;
+  color: var(--primary);
+}
+@media (max-width:900px) {
+  .page-portfolio__title{
+    padding: 0 1rem;
+    margin: 60px auto 100px auto;
+  }
+}

@@ -1,0 +1,49 @@
+{% from "components/layout/button/button.njk" import button %}
+
+{% macro portfolioList(service, index, site) %}
+  <div class="portfolio-list">
+    <div class="portfolio-list__title">
+      <span class="portfolio-list__index">0{{ index }}</span>
+      <h2 id="{{ service.slug }}" class="h2">{{ service.name }}</h2>
+    </div>
+    <div class="portoflio-list__slider">
+      <button class="previous">
+        <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0.591118 13.5112L8.37891 27L9.96078 26.0867L2.7134 13.5339L9.99997 0.913187L8.4181 -0.00010695L0.630489
+              13.4884L0.591118 13.5112Z"
+            fill="#E9E4D9"/>
+        </svg>
+      </button>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for project in service.projects %}
+            <div class="swiper-slide">
+              {{ project.projects_id | log }}
+              <figure class="swiper-slide__figure">
+                <img src="{{site.api}}/assets/{{project.projects_id.thumbnail.id}}" alt="">
+              </figure>
+              <a href="/portfolio/{{project.projects_id.slug }}/" class="h4 swiper-slide__title">title</a>
+              <span class="text swiper-slide__date">2022</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <button class="next">
+        <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.40885 13.4888L1.62106 0L0.0391878 0.913293L7.28656 13.4661L0 26.0868L1.58187 27.0001L9.36948 13.5116L9.40885
+              13.4888Z"
+            fill="#E9E4D9"/>
+        </svg>
+      </button>
+    </div>
+    <div class="portfolio-list__button">
+        {{button(label="En savoir plus", href="/services/" + service.slug + "/", arrow = true)}}
+    </div>
+  </div>
+{% endmacro %}
