@@ -11,7 +11,7 @@ sliders.forEach(slider=>{
   let swiper = new Swiper(swiperContainer, {
     loop:true,
     slidesPerView: 1.1,
-
+    loop:true,
     spaceBetween:20,
     breakpoints: {
       1200: {
