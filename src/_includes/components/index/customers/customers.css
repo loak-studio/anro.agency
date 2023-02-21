@@ -20,6 +20,7 @@
 
 .customer__logo {
   height: 58px;
+  max-width: 300px;
 }
 
 .customer__logo img {
