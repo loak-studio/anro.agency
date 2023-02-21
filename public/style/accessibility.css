@@ -1,0 +1,4 @@
+a:focus-visible, button:focus-visible{
+  outline: 2px dashed var(--primary);
+  outline-offset: 10px;
+}
