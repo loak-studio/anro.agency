@@ -12,6 +12,19 @@ eleventyComputed:
 {% from "components/projects/project-header/project-header.njk" import projectHeader %}
 {% from "components/projects/project-review/project-review.njk" import review %}
 
+{% from "components/projects/project-title/project-title.njk" import projectTitle %}
+{% from "components/projects/project-image/project-image.njk" import projectImage %}
+{% from "components/projects/project-wysiwyg/project-wysiwyg.njk" import projectWysiwyg %}
+
 
 {{projectHeader(project, site)}}
+  {% for component in project.content%}
+      {% if component.collection == "components_titles" %}
+          {{projectTitle(component, site)}}
+      {% elif component.collection == "components_image" %}
+          {{projectImage(component, site)}}
+      {% elif component.collection == "components_wysiwyg" %}
+          {{projectWysiwyg(component, site)}}
+      {% endif %}
+  {%endfor%}
 {{review(project,site)}}

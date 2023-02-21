@@ -1,4 +1,4 @@
-.h1 {
+.h1, .wysiwyg h1 {
   font-family: 'Black Mango';
   font-style: normal;
   font-weight: 600;
@@ -7,7 +7,7 @@
   text-transform: uppercase;
 }
 
-.h2 {
+.h2, .wysiwyg h2 {
   font-family: 'Black Mango';
   font-style: normal;
   font-weight: 600;
@@ -16,7 +16,7 @@
   text-transform: uppercase;
 }
 
-.h3 {
+.h3, .wysiwyg h3 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -24,7 +24,7 @@
   line-height: 60px;
 }
 
-.h4 {
+.h4, .wysiwyg h4 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -32,7 +32,7 @@
   line-height: 48px;
 }
 
-.h5 {
+.h5, .wysiwyg h5 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -40,7 +40,7 @@
   line-height: 36px;
 }
 
-.h6 {
+.h6, .wysiwyg h6 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -48,7 +48,7 @@
   line-height: 30px;
 }
 
-.text {
+.text, .wysiwyg p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -56,7 +56,7 @@
   line-height: 24px;
 }
 
-.link {
+.link, .wysiwyg a {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;

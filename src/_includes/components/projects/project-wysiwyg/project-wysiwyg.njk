@@ -1,0 +1,5 @@
+{% macro projectWysiwyg(component, site) %}
+  <div class="project-wysiwyg wysiwyg">
+    {{component.item.wysiwyg | safe}}
+  </div>
+{% endmacro %}

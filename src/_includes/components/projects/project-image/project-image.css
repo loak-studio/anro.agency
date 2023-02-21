@@ -1,0 +1,29 @@
+.project-image {
+
+  margin: 0 auto 60px auto;
+  height: 410px;
+  max-width: 1055px;
+  width: 100%;
+  position: relative;
+}
+
+.project-image__figure {
+  border-radius: 400px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1100px) {
+
+  .project-image__figure{
+    position: absolute;
+    left: -215px;
+  }
+}
+@media (max-width:800px) {
+  .project-image{
+    height: 235px;}
+    .project-image__figure{
+      width: 605px;
+    }
+}

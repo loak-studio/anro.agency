@@ -1,0 +1,7 @@
+{% macro projectImage(component, site) %}
+<div class="project-image">
+    <figure class="project-image__figure">
+    <img src="{{site.api}}/assets/{{component.item.image }}" alt="">
+  </figure>
+</div>
+{% endmacro %}

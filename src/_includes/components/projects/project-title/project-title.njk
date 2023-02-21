@@ -1,0 +1,10 @@
+{% macro projectTitle(component, site) %}
+<div class="project-title">
+    <div class="project-title__container">
+      <h2 class="h2">{{component.item.title }}</h2>
+    <figure class="project-title__figure">
+      <img src="{{site.api}}/assets/{{component.item.image}}" alt="">
+    </figure>
+    </div>
+</div>
+{% endmacro %}

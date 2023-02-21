@@ -1,6 +1,7 @@
 .project-review{
   color: var(--primary);
   border-top: 2px solid var(--primary);
+  margin-top: 160px;
 }
 .project-review__title{
   max-width: 1068px;

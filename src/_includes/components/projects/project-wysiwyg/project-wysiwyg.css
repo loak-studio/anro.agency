@@ -1,0 +1,13 @@
+.project-wysiwyg {
+  color: var(--primary);
+  max-width: 1068px;
+  margin: 0 auto 60px auto;
+}
+.project-wysiwyg > *{
+  max-width: 700px;
+}
+@media (max-width: 1300px) {
+  .project-wysiwyg{
+    padding: 0 1rem;
+  }
+}

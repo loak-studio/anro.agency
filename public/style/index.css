@@ -41,3 +41,8 @@
  /* -- PROJECTS */
  @import "../../src/_includes/components/projects/project-header/project-header.css";
  @import "../../src/_includes/components/projects/project-review/project-review.css";
+    /* -- PROJECTS SUB COMPONENTS */
+ @import "../../src/_includes/components/projects/project-title/project-title.css";
+ @import "../../src/_includes/components/projects/project-wysiwyg/project-wysiwyg.css";
+ @import "../../src/_includes/components/projects/project-image/project-image.css";
+
