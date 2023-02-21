@@ -25,7 +25,7 @@ services.forEach(service=>{
       opacity:[0,1],
       y:[50,0]
     })
-  },{amount:.5})
+  },{amount:.3})
 
 
 
