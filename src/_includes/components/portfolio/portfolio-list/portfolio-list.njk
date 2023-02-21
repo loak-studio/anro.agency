@@ -24,8 +24,8 @@
               <figure class="swiper-slide__figure">
                 <img src="{{site.api}}/assets/{{project.projects_id.thumbnail.id}}" alt="">
               </figure>
-              <a href="/portfolio/{{project.projects_id.slug }}/" class="h4 swiper-slide__title">title</a>
-              <span class="text swiper-slide__date">2022</span>
+              <a href="/portfolio/{{project.projects_id.slug }}/" class="h4 swiper-slide__title">{{project.projects_id.name}}</a>
+              <span class="text swiper-slide__date">{{project.projects_id.begin | year}}</span>
             </div>
           {% endfor %}
         </div>

@@ -1,0 +1,17 @@
+---
+layout: layout.njk
+pagination:
+    data: projects
+    size: 1
+    alias: project
+    addAllPagesToCollections: true
+permalink: "portfolio/{{ project.slug }}/"
+eleventyComputed:
+    title: "{{project.name}}"
+---
+{% from "components/projects/project-header/project-header.njk" import projectHeader %}
+{% from "components/projects/project-review/project-review.njk" import review %}
+
+
+{{projectHeader(project, site)}}
+{{review(project,site)}}

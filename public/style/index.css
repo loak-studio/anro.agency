@@ -9,6 +9,7 @@
 @import "./pages/services.css";
 @import "./pages/contact.css";
 @import "./pages/portfolio.css";
+/* @import "./pages/project.css"; */
 
 /* Components */
 
@@ -18,6 +19,7 @@
 @import "../../src/_includes/components/layout/need-help/need-help.css";
 @import "../../src/_includes/components/layout/footer/footer.css";
 @import "../../src/_includes/components/layout/button/button.css";
+@import "../../src/_includes/components/layout/breadcrumb/breadcrumb.css";
 
   /* -- INDEX */
 
@@ -34,3 +36,7 @@
   /* -- PORTFOLIO */
 
 @import "../../src/_includes/components/portfolio/portfolio-list/portfolio-list.css";
+
+ /* -- PROJECTS */
+ @import "../../src/_includes/components/projects/project-header/project-header.css";
+ @import "../../src/_includes/components/projects/project-review/project-review.css";

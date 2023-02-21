@@ -1,0 +1,14 @@
+{% macro breadcrumb(items) %}
+  <nav class="breadcrumb">
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="/">Accueil</a>
+      </li>
+      {% for item in items %}
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="{{ item.href }}">{{ item.label }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endmacro %}

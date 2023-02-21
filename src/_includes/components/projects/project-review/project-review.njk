@@ -1,0 +1,17 @@
+{% macro review(project,site) %}
+<div class="project-review">
+  <h2 class="h2 project-review__title">Avis client</h2>
+  <div class="project-review__customer">
+    <figure class="project-review__customer-picture">
+      <img src="{{site.api}}/assets/{{project.customer_picture.id}}" alt="">
+    </figure>
+    <div class="project-review__customer-informations">
+      <span class="h5">{{project.customer_name}}</span>
+      <span class="text">{{project.customer_job}}</span>
+    </div>
+  </div>
+  <div class="project-review__content">
+      {{project.customer_review | safe}}
+  </div>
+</div>
+{% endmacro %}

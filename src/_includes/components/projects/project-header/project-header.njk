@@ -1,0 +1,64 @@
+{% from "components/layout/breadcrumb/breadcrumb.njk" import breadcrumb %}
+{% macro projectHeader(project, site) %}
+  <div class="project-header">
+    <h1 class="h1">{{ project.name }}</h1>
+    {{ breadcrumb(items=[{label:'Portfolio', href:'/portfolio/'}, {label:project.name, href:'/portfolio/' + project.slug + '/'}]) }}
+    <div class="project-header__informations">
+      <figure class="project-header__thumbnail">
+        <img src="{{ site.api }}/assets/{{ project.thumbnail.id }}" alt=""></figure>
+        <div class="project-header__side">
+          <div>
+            <h2 class="text">Service</h2>
+            <ul>
+              {% for service in project.services %}
+                <li class="h5">
+                  <a href="/services/{{ service.services_id.slug }}/">{{ service.services_id.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h2 class="text">Date</h2>
+            <div class="h5">
+              <span>{{ project.begin | monthAndYear }}</span>
+              -
+              {% if project.end %}
+                {{ project.end | monthAndYear }}
+              {% else %}
+                Aujourd'hui
+              {% endif %}
+            </div>
+          </div>
+          <div>
+            <h2 class="text">Client</h2>
+            <span class="h5">{{ project.customer.name }}</span>
+          </div>
+          <div>
+            <h2 class="text">Liens du client</h2>
+            <ul class="project-header__links">
+                {% if project.customer_website %}
+                  <li>
+                    <a title="Site web" target="_blank" href="{{ project.customer_website }}">{% include "components/icons/website.njk" %}</a>
+                  </li>
+                {% endif %}
+                {% if project.customer_facebook %}
+                  <li>
+                    <a title="Facebook" target="_blank" href="{{ project.customer_facebook }}">{% include "components/icons/facebook.njk" %}</a>
+                  </li>
+                {% endif %}
+                {% if project.customer_instagram %}
+                  <li>
+                    <a title="Instagram" target="_blank" href="{{ project.customer_instagram }}">{% include "components/icons/instagram.njk" %}</a>
+                  </li>
+                {% endif %}
+                {% if project.customer_linkedin %}
+                  <li>
+                    <a title="LinkedIn" target="_blank" href="{{ project.customer_linkedin }}">{% include "components/icons/linkedin.njk" %}</a>
+                  </li>
+                {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endmacro %}
