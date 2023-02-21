@@ -19,5 +19,7 @@ subLists.forEach(subList=>{
 const button = document.querySelector('#hamburger')
 
 button.addEventListener('click',()=>{
+  window.scrollTo(0,0)
+  document.querySelector('html').classList.toggle('nav-open')
   header.classList.toggle('header--active')
 })
