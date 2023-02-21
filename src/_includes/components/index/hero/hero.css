@@ -47,7 +47,7 @@
 }
 @media(max-width: 1320px){
   .hero__text{
-    max-width: 600px;
+    max-width: 500px;
   }
   .hero__title{
     font-size: 11.25rem;
@@ -55,6 +55,8 @@
   .hero__content{
     gap:1rem;
     padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   .hero__pill{
     height: 413px;
@@ -76,6 +78,9 @@
     }
   .hero__title{
     font-size: 5.25rem;
+  }
+  .hero__text{
+    max-width: none;
   }
 }
 @media (max-width: 600px) {
