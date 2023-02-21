@@ -8,6 +8,7 @@ pagination:
 permalink: "portfolio/{{ project.slug }}/"
 eleventyComputed:
     title: "{{project.name}}"
+    description: "{{project.description}}"
 ---
 {% from "components/projects/project-header/project-header.njk" import projectHeader %}
 {% from "components/projects/project-review/project-review.njk" import review %}
