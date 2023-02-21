@@ -46,11 +46,13 @@
   margin: 0 auto 200px auto;
 }
 @media(max-width: 1320px){
+  .hero__text{
+    max-width: 600px;
+  }
   .hero__title{
-    font-size: 6.25rem;
+    font-size: 11.25rem;
   }
   .hero__content{
-    flex-direction: column;
     gap:1rem;
     padding: 1rem;
   }
@@ -68,6 +70,13 @@
     .hero__numbers{
       justify-content: center;
     }
+    .hero__content{
+
+    flex-direction: column;
+    }
+  .hero__title{
+    font-size: 5.25rem;
+  }
 }
 @media (max-width: 600px) {
   .hero__title{

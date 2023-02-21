@@ -40,7 +40,7 @@
   transition: transform 400ms, right 400ms;
   background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='18.3348' y='8.53491' width='14.8' height='1.2' transform='rotate(45 18.3348 8.53491)' fill='%23E9E4D9'/%3E%3Crect x='28.8' y='19' width='14.8' height='1.2' transform='rotate(135 28.8 19)' fill='%23E9E4D9'/%3E%3Crect x='27.6' y='18.8' width='1.2' height='20.4' transform='rotate(90 27.6 18.8)' fill='%23E9E4D9'/%3E%3Ccircle cx='19.2' cy='18.8001' r='18.2' transform='rotate(-90 19.2 18.8001)' stroke='%23E9E4D9' stroke-width='1.2'/%3E%3C/svg%3E%0A");
 }
-@media (max-width: 1320px) {
+@media (max-width: 1000px) {
   .hero-button::after, .hero-button::before{
     display: none;
   }

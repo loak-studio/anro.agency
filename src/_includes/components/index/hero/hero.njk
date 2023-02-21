@@ -5,18 +5,18 @@
   <h1 class="hero__title">anró</h1>
   <div class="hero__content">
     <p class="hero__text text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pellentesque turpis vitae mattis. Cras rutrum turpis non urna mattis maximus. Quisque condimentum sit amet purus vitae vehicula
+      {{homepage.header_text}}
     </p>
     {{ heroButton(label="Découvrez l’agence", href="#mes-services", hoverLabel="Rendez votre communication unique") }}
   </div>
   <div class="hero__pill">
     <figure class="hero__pill-figure">
-    <img src="/antoine_boucaut.jpg" alt="">
+    <img src="{{site.api}}/assets/{{homepage.header_image }}" alt="">
   </figure>
   </div>
   <div class="hero__numbers">
-    {{number(label="Posts réalisés", number="800")}}
-    {{number(label="Clients satisfaits", number="12")}}
-    {{number(label="Followers animés tous les mois", number="10k")}}
+   {% for numberItem in homepage.numbers %}
+     {{number(label=numberItem.label, number=numberItem.value)}}
+   {% endfor %}
   </div>
 </section>
