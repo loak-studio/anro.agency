@@ -1,0 +1,14 @@
+---
+permalink: 404.html
+layout: layout.njk
+---
+
+{% from "components/layout/button/button.njk" import button %}
+
+<div class="error">
+  <h1 class="hero__title">404</h1>
+<div class="error__text">
+  <p class="h4">La page que vous cherchez est inaccessible, ou n’existe plus...</p>
+  {{button(label="Retour à l'accueil", href="/")}}
+</div>
+</div>

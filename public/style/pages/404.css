@@ -1,0 +1,23 @@
+.error h1, .error p{
+  color: var(--primary);
+}
+
+.error__text{
+  display: flex;
+  max-width: 1268px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: flex-end;
+  margin-bottom: 160px;
+}
+.error__text > *:nth-child(1){
+  max-width: 636px;
+}
+@media (max-width: 1300px) {
+    .error__text{
+      flex-direction: column;
+      align-items: center;
+      gap:1rem;
+      padding: 0 1rem;
+    }
+}
