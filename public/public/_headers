@@ -1,1 +1,8 @@
-test
+/assets/*
+  Cache-Control: public
+  Cache-Control: max-age=365000000
+  Cache-Control: immutable
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
