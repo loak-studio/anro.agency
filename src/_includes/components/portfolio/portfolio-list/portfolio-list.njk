@@ -22,7 +22,7 @@
           {% for project in service.projects %}
             <div class="swiper-slide">
               <figure class="swiper-slide__figure">
-                <img src="{{site.api}}/assets/{{project.projects_id.thumbnail.id}}" alt="">
+                <img src="{{site.api}}/assets/{{project.projects_id.thumbnail.id}}?width=400&height=250&quality=50&fit=cover" width="400" height="250" alt="">
               </figure>
               <a href="/portfolio/{{project.projects_id.slug }}/" class="h4 swiper-slide__title">{{project.projects_id.name}}</a>
               <span class="text swiper-slide__date">{{project.projects_id.begin | year}}</span>
