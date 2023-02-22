@@ -1,7 +1,7 @@
 {% macro projectImage(component, site) %}
 <div class="project-image">
     <figure class="project-image__figure">
-    <img src="{{site.api}}/assets/{{component.item.image }}" alt="">
+    <img src="{% img component.item.image, 1055, 410  %}" width="1055" height="410" alt="">
   </figure>
 </div>
 {% endmacro %}

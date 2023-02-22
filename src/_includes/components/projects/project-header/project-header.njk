@@ -5,7 +5,7 @@
     {{ breadcrumb(items=[{label:'Portfolio', href:'/portfolio/'}, {label:project.name, href:'/portfolio/' + project.slug + '/'}]) }}
     <div class="project-header__informations">
       <figure class="project-header__thumbnail">
-        <img src="{{ site.api }}/assets/{{ project.thumbnail.id }}" alt=""></figure>
+        <img src="{% img project.thumbnail.id, 1064, 399  %}" width="1064" height="399" alt=""></figure>
         <div class="project-header__side">
           <div>
             <h2 class="text">Service</h2>

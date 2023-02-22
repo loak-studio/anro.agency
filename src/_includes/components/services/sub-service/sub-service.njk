@@ -8,7 +8,7 @@
       {{subservice.description | safe}}
     </div>
     <figure class="sub-service__figure">
-      <img src="{{ site.api}}/assets/{{subservice.image.id}}" alt="">
+      <img src="{% img subservice.image.id, 667, 326  %}" width="667" height="326" alt="">
     </figure>
   </div>
 {% endmacro %}

@@ -3,7 +3,7 @@
   <h2 class="h2 project-review__title">Avis client</h2>
   <div class="project-review__customer">
     <figure class="project-review__customer-picture">
-      <img src="{{site.api}}/assets/{{project.customer_picture.id}}" alt="">
+      <img src="{% img project.customer_picture.id, 60, 60  %}" width="60" height="60" alt="">
     </figure>
     <div class="project-review__customer-informations">
       <span class="h5">{{project.customer_name}}</span>
