@@ -26,8 +26,5 @@
     "dotenv": "^16.0.3",
     "motion": "^10.15.5",
     "swiper": "^9.0.5"
-  },
-  "devDependencies": {
-    "netlify-plugin-cache": "^1.0.3"
   }
 }
