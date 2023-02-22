@@ -10,7 +10,6 @@ module.exports = function(eleventyConfig) {
     const date = new Date(value)
     return date.toLocaleDateString('fr-fr', {month:'long', year:'numeric'})
   })
-  eleventyConfig.addPassthroughCopy({ "public": "/" })
   eleventyConfig.addPlugin(EleventyVitePlugin);
   
   return {
