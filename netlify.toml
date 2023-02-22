@@ -1,4 +1,4 @@
 [[plugins]]
 package = "netlify-plugin-cache"
   [plugins.inputs]
-  paths = ["_site", "node_modules", "public"]
+  paths = ["_site", "public"]
