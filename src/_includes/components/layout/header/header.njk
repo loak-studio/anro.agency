@@ -38,7 +38,7 @@
       </ul>
     </nav>
     <ul class="header__social">
-      {% for link in social %}
+      {% for link in social.social %}
         <li>
           <a title="{{link.name}}" target="_blank" href="{{ link.href }}">
             {% include "components/icons/" + link.icon + ".njk" %}

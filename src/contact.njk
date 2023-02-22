@@ -9,16 +9,16 @@ needHelp: false
   <ul class="page-contact__links">
     <li class="page-contact__link">
       <span class="text page-contact__link-title">Téléphone</span>
-      <a class="h5" href="tel:0471 90 90 90">0471 90 90 90</a>
+      <a class="h5" href="tel:{{social.phone}}">{{social.phone}}</a>
     </li>
     <li class="page-contact__link">
       <span class="text page-contact__link-title">Mail</span>
-      <a class="h5 page-contact__link-link" href="mailto:antoine@anro.agency">antoine@anro.agency</a>
+      <a class="h5 page-contact__link-link" href="mailto:{{social.mail}}">{{social.mail}}</a>
     </li>
     <li class="page-contact__link">
       <span class="text page-contact__link-title">Réseaux sociaux</span>
       <div class="page-contact__link-social">
-        {% for link in social %}
+        {% for link in social.social %}
           <a title="{{link.name}}" target="_blank" href="{{link.href}}">
             {% include "components/icons/" + link.icon + ".njk" %}
           </a>
