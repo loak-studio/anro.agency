@@ -1,0 +1,11 @@
+.legal{
+  color: var(--primary);
+  max-width: 850px;
+  width: 100%;
+  margin: 5rem auto 2rem auto ;
+}
+@media (max-width: 666px) {
+  .legal{
+    padding: 0 1rem;
+  }
+}

@@ -88,6 +88,14 @@
   font-size: 1.25rem;
   line-height: 25px;
 }
+
+.wysiwyg ul{
+  list-style: disc;
+  padding-left: 1rem;
+  font-family: "Poppins";
+  line-height: 150%;
+  margin-top: 1rem;
+}
 @media (max-width:900px) {
   .h1{
     font-size: 3rem;
