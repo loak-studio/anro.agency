@@ -21,6 +21,7 @@
 .customer__logo {
   height: 58px;
   max-width: 300px;
+  filter: grayscale(1);
 }
 
 .customer__logo img {
@@ -49,9 +50,14 @@
     padding: 40px 1rem 100px 1rem;
   }
   .customers__list {
-
+    gap: 2rem;
     margin: 60px auto;
-  }  .customer__logo {
+    justify-content: space-between;
+  }  
+  .customers__list > *{
+    max-width: 40%;
+  }
+  .customer__logo {
     height: 32px;
   }
   .customers__content{
