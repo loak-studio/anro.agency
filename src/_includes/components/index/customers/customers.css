@@ -42,25 +42,31 @@
 }
 
 @media (max-width: 1310px) {
-  .customers{padding: 80px 1rem;}
+  .customers {
+    padding: 80px 1rem;
+  }
 }
 
 @media (max-width: 800px) {
   .customers {
     padding: 40px 1rem 100px 1rem;
   }
+
   .customers__list {
     gap: 2rem;
     margin: 60px auto;
     justify-content: space-between;
-  }  
-  .customers__list > *{
+  }
+
+  .customers__list>* {
     max-width: 40%;
   }
+
   .customer__logo {
     height: 32px;
   }
-  .customers__content{
+
+  .customers__content {
     display: flex;
     flex-direction: column;
   }
